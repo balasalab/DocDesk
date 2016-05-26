@@ -1,0 +1,11 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DocDesk | {% block title %}{% endblock %}</title>
+        <link href="{% static 'landing/css/bootstrap.min.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+    </body>
+</html>

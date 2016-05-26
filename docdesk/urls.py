@@ -22,6 +22,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('newsletter.urls')),
 	url(r'', include('landing.urls')),
+    url(r'^polls/', include('polls.urls')),
+    # url(r'', include('accounts.urls')),
+    url(r'', include('project.urls', namespace='project')),
 ]
 
 if settings.DEBUG:

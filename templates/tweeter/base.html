@@ -1,0 +1,19 @@
+{{% loadstaticfiles %}}
+<!DOCTYPE html>
+<html lang="en" ng-app="twitter">
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	angular
+		.module('tweeterApp.services')
+		.factory('AuthUser', function(){
+			return{
+				id:"{{ user.id | default:'''}}";
+			}
+		})
+</script>
+</html>

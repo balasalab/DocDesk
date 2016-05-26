@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     #my app
     'newsletter',
     'landing',
+    'polls.apps.PollsConfig',
+    'project',
 ]
 
 MIDDLEWARE_CLASSES = [
